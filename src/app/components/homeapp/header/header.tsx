@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Logo from "../../../../../public/Logo.svg";
@@ -7,10 +8,12 @@ import search from "../../../../../public/search.svg";
 import profile from "../../../../../public/profile.svg";
 import sms from "../../../../../public/sms.svg";
 import filter from "../../../../../public/filter.svg";
+import Request from "@/config/request";
 
 export const Header = () => {
   return (
-    <div>
+   <div className="container">
+     <div className="h-[92px] shadow-[0px_12px_18px_-2px_rgba(0,0,0,0.04)] ">
       <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 wep:px-16">
         <div className="flex justify-between mt-[16px]">
           <div className="tablet:mt-[8px]">
@@ -74,5 +77,6 @@ export const Header = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
